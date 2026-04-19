@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-display {
+  font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+:root {
+  --minday-blue: #1A3C6E;
+  --minday-blue-mid: #2B5BA8;
+  --minday-blue-light: #EEF4FF;
+  --minday-black: #0D1B2A;
+  --minday-gray: #6B7280;
+  --minday-light: #F4F7FB;
+  --minday-white: #FFFFFF;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 218 62% 26%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 214 100% 97%;
+    --secondary-foreground: 218 62% 26%;
+    --muted: 214 30% 95%;
+    --muted-foreground: 218 15% 45%;
+    --accent: 218 62% 26%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 218 62% 26%;
+    --radius: 0.75rem;
+  }
+}
+
+
+
+.gradient-blue {
+  background: linear-gradient(135deg, #1A3C6E 0%, #2B5BA8 100%);
+}
+
+.text-brand {
+  color: #1A3C6E;
+}
+
+.bg-brand {
+  background-color: #1A3C6E;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1A3C6E;
+  border-radius: 3px;
+}
+
+/* Smooth animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Map container */
+.leaflet-container {
+  border-radius: 0.75rem;
+  z-index: 1;
+}
