@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { base44 } from "@/api/base44Client";
+import { base44 } from "@/api/api";
 import { CheckCircle, XCircle, RotateCcw, Eye, ZapIcon, AlertTriangle, ShieldCheck, FileText } from "lucide-react";
 import DocumentVerificationStatus from "./DocumentVerificationStatus";
 
